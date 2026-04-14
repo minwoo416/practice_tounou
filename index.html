@@ -6,19 +6,316 @@
     <title>내 공간을 나답게 | 뚜누</title>
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body><!-- 시멘틱태그 헤더, 메인. 풋터를 이용해서 보기 쉽게 세팅 -->
     <header>
         <div class="logo_container">
             <div class="logo_wrap">
                 <button class="more_btn"><img src="./images/more_icon.png" alt="전체보기"></button>
-                <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
+                <h1><a href="./index.html"><img src="./images/logo.png" alt="뚜누 로고"></a></h1>
             </div>
-            <div id="gnb"></div>
+            <div id="gnb">
+                <ul class="depth1"><!-- 제일 첫번째 depth -->
+                    <li>
+                        <a href="#">
+                            BEST
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            NEW
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            침구
+                        </a>
+                        <ul class="depth2"><!-- 두번째 depth -->
+                            <li>
+                                <a href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            매트·러그
+                        </a>
+                        <ul class="depth2"><!-- 두번째 depth -->
+                            <li>
+                                <a href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            포스터
+                        </a>
+                        <ul class="depth2"><!-- 두번째 depth -->
+                            <li>
+                                <a href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            쿠션
+                        </a>
+                        <ul class="depth2"><!-- 두번째 depth -->
+                            <li>
+                                <a href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            타월
+                        </a>
+                        <ul class="depth2"><!-- 두번째 depth -->
+                            <li>
+                                <a href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="user_menu"></div>
+        <div class="user_menu">
+            <ul class="user_menu_wrap">
+                <li><button type="button" class="search_btn"><img src="./images/search_icon.png" alt="검색하기"></button></li>
+                <li><a href="#" class="cart_btn"><img src="./images/cart_icon.png" alt="장바구니"></a></li>
+                <li><a href="#" class="my_page_btn"><img src="./images/person_icon.png" alt="마이페이지"></a></li>
+            </ul>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <div class="banner_container">
+            <div class="swiper banner_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner_01.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner_02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner_01.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner_02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner_01.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner_02.jpg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="benefit_container">
+            <a href="#"><img src="./images/small_banner_01.png" alt=""></a>
+            <a href="#"><img src="./images/small_banner_02.jpg" alt=""></a>
+        </div>
+        <section class="best_container">
+            <div class="best_title_wrap">
+                <h2>뚜누의 베스트</h2>
+                <a href="#">더보기</a>
+            </div>
+            <div class="best_product_list_wrap">
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_01.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">하연</a>
+                        <a href="#" class="product_name">웜 하트 리버시블 사계절 차렵이불</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>71200원</p>
+                                <p class="sale">20%</p>
+                                <p class="before"><del>89000원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 35건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_02.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">뚜누</a>
+                        <a href="#" class="product_name">사계절 차렵이불 세트 골라담기</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>1026000원</p>
+                                <p class="sale">25%%</p>
+                                <p class="before"><del>136800원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 23건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_03.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">킴밍</a>
+                        <a href="#" class="product_name">WATER_MIRROR 소프트 규조토 발매트</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>23900원</p>
+                                <p class="sale">25%</p>
+                                <p class="before"><del>31900원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 218건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_04.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">홈브루아이디어클럽</a>
+                        <a href="#" class="product_name">Bath time 1 소프트 규조토 발매트</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>23900원</p>
+                                <p class="sale">25%</p>
+                                <p class="before"><del>31900원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 33건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_05.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">이티씨</a>
+                        <a href="#" class="product_name">Hair Style 소프트 규조토 발매트, 주방매트</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>23900원</p>
+                                <p class="sale">25%</p>
+                                <p class="before"><del>31900원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 161건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_06.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">킴밍</a>
+                        <a href="#" class="product_name">MY FAVORITE THINGS 소프트 규조토 발매트, 주방매트</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>23900원</p>
+                                <p class="sale">25%</p>
+                                <p class="before"><del>31900원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 241건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_07.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">김현지</a>
+                        <a href="#" class="product_name">Flower in dreams Sunflower Yellow 소프트 규조토...</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>23900원</p>
+                                <p class="sale">25%</p>
+                                <p class="before"><del>31900원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 368건</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_product_wrap">
+                    <div class="best_product_photo">
+                        <a href="#"><img src="./images/product_best_08.jpg" alt=""></a>
+                    </div>
+                    <div class="best_product_content">
+                        <a href="#" class="brand">블랑카 고메즈</a>
+                        <a href="#" class="product_name">강풍 발매트</a>
+                        <div class="price_review_wrap">
+                            <div class="price_wrap">
+                                <p>25300원</p>
+                                <p class="sale">25%</p>
+                                <p class="before"><del>33800원</del></p>
+                            </div>
+                            <p class="review"><a href="#">리뷰 123건</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
