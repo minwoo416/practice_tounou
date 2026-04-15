@@ -1,7 +1,7 @@
 const bannerSwiper = new Swiper('.banner_container .banner_wrap', {
 
 })
-const moreBtn = document.querySelector('.more_btn');
-moreBtn.addEventListener('click',()=>{
-    console.log('됐나?')
+const tasteSwiper = new Swiper('.taste_list_wrap',{
+    slidesPerView:3.4,
+    // centeredSlides: true
 })
