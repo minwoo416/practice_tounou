@@ -83,7 +83,6 @@ main .best_container .best_title_wrap {
     text-align:center;
     margin-bottom:50px;
     width:100%;
-    background:red;
 }
 main .best_container .best_title_wrap h2 {
     font-size:2.188rem; font-weight:700;  clear:both;
@@ -363,3 +362,11 @@ main .all_product_container .all_product_list_wrap .swiper .swiper-wrapper .swip
 main .all_product_container .all_product_list_wrap .swiper .swiper-wrapper .swiper-slide .all_product_wrap .all_product_content .price_review_wrap .review a {
     font-size:0.75rem; color:#a9a9a9;
 }
+/* ------뚜누이야기----- */
+main .tounou_story_container {
+    display:flex; justify-content:center; gap:100px;
+}
+main .tounou_story_container a {text-align:center; font-size:1.125rem; font-weight:500;}
+main .tounou_story_container a img {display:block; margin-bottom:20px;}
+/* footer */
+footer {background:#f2f2f2; width:100%; padding:50px; height:415px; margin-top:130px;}
